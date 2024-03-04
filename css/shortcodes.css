@@ -3831,12 +3831,12 @@ form.contact_form select {
     background-color: transparent;
     border-radius: 5px;
     border: 1px solid #ced7e4;
-    padding: 15px 15px 15px 20px;
     font-size: 15px;
 }
 .bg-base-grey form.contact_form input, 
 .bg-base-grey form.contact_form textarea,
-.bg-base-grey form.contact_form select { background-color: var(--base-grey); margin-bottom: 20px!important; }
+.bg-base-grey form.contact_form select { 
+    background-color: var(--base-grey); margin-bottom: 20px!important; }
 .bg-base-white form.contact_form input, 
 .bg-base-white form.contact_form textarea,
 .bg-base-white form.contact_form select { background-color: var(--base-grey); margin-bottom: 20px!important; }
@@ -3849,7 +3849,14 @@ form.contact_form textarea:focus,
 form.contact_form select:focus {
     border: 1px solid var(--base-skin);
 }
+.form-check-input:checked{
+    background-color: #0C5F41 !important;
+    border: 1px solid #0C5F41;
+}
+.form-check-input:focus{
+    box-shadow: none !important;
 
+}
 /* ===============================================
     18.Tab
 ------------------------*/
