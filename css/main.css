@@ -126,7 +126,7 @@ select{
     vertical-align: middle;
     width: 100%;
     color: #666666;
-    padding: 12px 15px 12px;
+    padding: 5px 15px 5px;
     border-radius: 0;
     font-weight: 400;
     background-color: #fff;
@@ -375,6 +375,16 @@ label { font-size: 14px; }
 .fs-30 { font-size: 28px !important; line-height: 40px; }
 .fs-34 { font-size: 34px !important; line-height: 40px !important; }
 .fs-42 { font-size: 42px !important; line-height: 54px !important; }
+label, .form-check-label{
+    color: #000 !important;
+}
+.form-check-input[type=checkbox],.form-check-input[type=radio], form.contact_form input, form.contact_form textarea, form.contact_form select {
+    border-color: #000 !important;
+}
+
+.form-check-input[type=checkbox]:focus,.form-check-input[type=radio]:focus, form.contact_form input:focus, form.contact_form textarea:focus, form.contact_form select:focus{
+    border-color: #4AB85F !important;
+}
 
 .lh-base {line-height: 20px!important;}
 

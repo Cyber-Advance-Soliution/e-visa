@@ -107,12 +107,12 @@
                                             <li class="mega-menu-item">
                                                 <a href="services.html" class="mega-menu-link"> Services</a>
                                                 <ul class="mega-submenu">
-                                                    <li><a href="#">Air-Ticketing</a></li>
-                                                    <li><a href="#">Hotels Booking</a></li>
-                                                    <li><a href="#">Travel Insurance</a></li>
-                                                    <li><a href="#">Recreational Packages</a></li>
-                                                    <li><a href="#">Travel History</a></li>
-                                                    <li><a href="#">Appointments</a></li>
+                                                    <li><a href="air-ticketing.html">Air-Ticketing</a></li>
+                                                    <li><a href="hotels-booking.html">Hotels Booking</a></li>
+                                                    <li><a href="travel-insurance.html">Travel Insurance</a></li>
+                                                    <li><a href="recreational-packages.html">Recreational Packages</a></li>
+                                                    <li><a href="travel-history.html">Travel History</a></li>
+                                                    <li><a href="appointments.html">Appointments</a></li>
                                                     <li class="mega-menu-item">
                                                         <a href="#" class="mega-menu-link">Religious Services</a>
                                                         <ul class="mega-submenu">
@@ -177,7 +177,7 @@
                                                 </ul>
                                             </li>
                                            
-                                            <li class="mega-menu-item active">
+                                            <li class="mega-menu-item ">
                                                 <a href="contact-us.html">Contact us</a>
                                             </li>
                                         </ul>
@@ -195,7 +195,7 @@
                                             </div>
                                         </div>
                                         <div class="header_btn">
-                                            <a class="prt-btn prt-btn-size-sm prt-btn-shape-round prt-btn-style-fill prt-btn-color-skincolor" href="contact-us.html">Get A Appointment</a>
+                                            <a class="prt-btn prt-btn-size-sm prt-btn-shape-round prt-btn-style-fill prt-btn-color-skincolor" href="get-an-appointment.html">Get A Appointment</a>
                                         </div>
                                     </div><!-- header_extra end -->
                                 </div><!-- site-navigation end-->
@@ -236,50 +236,567 @@
                     <div class="row g-0">
                       
                         <div class="col-lg-12">
-                            <div class="bg-base-grey spacing-25">
+                            <div class="spacing-25 shadow-lg">
                                 <!-- section title -->
-                                <div class="pb-2">
+                                <div>
                                     <div class="title-header">
-                                        <h3 class="title mb-0">Client Intention</h3
+                                        <h3 class="title">Client Intention</h3>
                                     </div>
                                 </div><!-- section title end -->
                                 <form action="#" class="contact_form clearfix" method="post">
                                     <div class="row">
                                         <div class="col-md-12">                  
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                    Immigration
-                                                </label>
-                                        </div>
-                                        <div class="col-md-12">
+                                            <input class="form-check-input" type="checkbox" id="flexCheckDefault">
                                             <label class="form-check-label" for="flexCheckDefault">
-                                              For  Immigration
+                                                Immigration
                                             </label>
-                                            <select>
-                                                <option value="hide">Asia</option>
-                                                <option value="Babies">Europe</option>
-                                                <option value="Nannies">America</option>
-                                                <option value="Babies and nannies duo">oceania</option>
-                                                <option value="Babies and nannies duo">Africa</option>
+                                        </div>
+                                        <div class="col-md-12" id="immigrationSelect" style="display: none;">
+                                            <label class="form-check-label" for="regionSelect">
+                                              For Immigration
+                                            </label>
+                                            <select id="regionSelect">
+                                                <option value="Asia">Asia</option>
+                                                <option value="Europe">Europe</option>
+                                                <option value="America">America</option>
+                                                <option value="Oceania">Oceania</option>
+                                                <option value="Africa">Africa</option>
                                             </select>
                                         </div>
-                                        <div class="col-md-12">
-                                            <input name="email" type="text" value="" placeholder="Email Address" required="required">
+                                        <div class="title-header pt-20">
+                                            <h3 class="title">
+                                                Personal Information</h3>
+                                                <h5 class="title">
+                                                    Please provide complete and right information:</h5>
                                         </div>
-                                        <div class="col-md-12">
-                                            <select id="selectbox">
-                                                <option value="hide">Services</option>
-                                                <option value="Babies">WordPress security</option>
-                                                <option value="Nannies">software integration</option>
-                                                <option value="Babies and nannies duo">Other</option>
+
+                                        <div class="col-md-12 d-flex justify-content-start align-items-center">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="singleradio">
+                                                <label class="form-check-label" for="singleradio">
+                                                  Single
+                                                </label>
+                                            </div>
+                                            <div class="form-check ms-3">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="marriedradio">
+                                                <label class="form-check-label" for="marriedradio">
+                                                  Married
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="title-header pt-10">
+                                          
+                                                <h5 class="title">
+                                                    Applicants details:</h5>
+                                        </div>
+
+                                        <div class="col-md-12 mb-10"> 
+                                            <label class="form-check-label pb-5" >
+                                                Applicant Name
+                                              </label>                 
+                                            <input name="name" type="text" value="" placeholder="Your Full Name" required="required" >
+                                        </div>
+                                        <div class="col-md-12 mb-10"> 
+                                            <label class="form-check-label pb-5" >
+                                             Address
+                                              </label>                 
+                                            <input name="name" type="text" value="" placeholder="Your Full Address" required="required" >
+                                        </div>
+                                        <div class="col-md-12 mb-10">
+                                            <label class="form-check-label pb-5" >
+                                                Email
+                                                 </label>
+                                            <input name="email" type="text" value="" placeholder="example@gmail.com" required="required">
+                                        </div>
+                                        <div class="col-md-12 mb-10">
+                                            <label class="form-check-label pb-5" >
+                                                Email Address 2
+                                                 </label>
+                                            <input name="email" type="text" value="" placeholder="example@gmail.com" required="required">
+                                        </div>
+                                        <div class="col-md-12 mb-10">
+                                            <label class="form-check-label pb-5" >
+                                                Cell Number
+                                                 </label>
+                                            <input name="phone" type="tel" value="" placeholder="923009994860" required="required">
+                                        </div>
+                                        <div class="col-md-12 mb-10">
+                                            <label class="form-check-label pb-5" >
+                                                Cell Number 2 (optional)
+                                                 </label>
+                                            <input name="phone" type="tel" value="" placeholder="923009994860" required="required">
+                                        </div>
+                                        <div class="col-md-12 mb-10"> 
+                                            <label class="form-check-label pb-5" >
+                                                Applicant CNIC
+                                              </label>                 
+                                            <input  type="text" value="" placeholder="  Applicant CNIC" required="required" >
+                                        </div>
+                                        <div class="col-md-12 mb-10"> 
+                                            <label class="form-check-label pb-5" >
+                                                Applicant DOB
+                                              </label>                 
+                                            <input  type="date" value="" placeholder="Applicant CNIC" required="required" >
+                                        </div>
+                                        <div class="col-md-12 mb-10"> 
+                                            <label class="form-check-label pb-5" >
+                                                Applicant Age
+                                              </label>                 
+                                            <input  type="text" value="" placeholder="NAN" required="required" >
+                                        </div>
+                                        <div class="col-md-12 mb-20" >
+                                            <label class="form-check-label" for="regionSelect">
+                                                Visa Refusal
+                                            </label>
+                                            <select id="regionSelect">
+                                                
+                                                <option>Yes</option>
+                                                <option>No</option>
                                             </select>
                                         </div>
-                                        <div class="col-md-12">
-                                            <textarea name="message" rows="4" placeholder="Your Message" required="required"></textarea>
+
+                                        <div class="title-header">
+                                            <h3 class="title">Academic</h3>
                                         </div>
-                                        <div class="mt-5">
-                                            <button class="submit prt-btn prt-btn-size-md prt-btn-shape-round prt-btn-style-fill prt-btn-color-skincolor" type="submit" value="submit">Submit Here</button> 
+                                        <div class="col-md-12">   
+                                            <!-- Checkboxes for selecting qualifications -->
+                                            <div class="d-flex align-items-center">
+                                                <div >
+                                                    <input class="form-check-input" type="checkbox" id="masterCheckbox">
+                                                    <label class="form-check-label">Master</label>
+                                                </div>
+                                                <div class="ml-20">
+                                                    <input class="form-check-input" type="checkbox" id="pgdCheckbox">
+                                                    <label class="form-check-label">PGD</label>
+                                                </div>
+                                                <div class="ml-20">
+                                                    <input class="form-check-input" type="checkbox" id="bachelorCheckbox">
+                                                    <label class="form-check-label">Bachelor</label>
+                                                </div>
+                                                <div class="ml-20">
+                                                    <input class="form-check-input" type="checkbox" id="diplomaCheckbox">
+                                                    <label class="form-check-label">Diploma</label>
+                                                </div>
+                                                <div class="ml-20">
+                                                    <input class="form-check-input" type="checkbox" id="alevelCheckbox">
+                                                    <label class="form-check-label">HSC / A-Level</label>
+                                                </div>
+                                                <div class="ml-20">
+                                                    <input class="form-check-input" type="checkbox" id="otherCheckbox">
+                                                    <label class="form-check-label">Other</label>
+                                                </div>
+                                            </div>
                                         </div>
+                                        
+
+                                        <!-- Master -->
+                                        <div class="col-md-12" id="masterInputs" style="display: none;">   
+                                            <label class="form-check-label pb-5 pt-10">Master</label>    
+                                            <div class="d-flex align-items-center">
+                                                <input type="text" placeholder="Name Of Qualification" required>
+                                                <input type="text" placeholder="Year of Completion" required class="ml-10">
+                                                <input type="text" placeholder="University / College" required class="ml-10">
+                                                <input type="text" placeholder="Grade / Division" required class="ml-10">
+                                            </div>  
+                                            <label class="form-check-label pb-5 pt-10">Double Master</label>  
+
+                                                <!-- Double Master option -->
+                                                <div class="col-md-12 d-flex justify-content-start align-items-center">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="doubleMasterRadio" id="doubleMasterYes">
+                                                        <label class="form-check-label" for="doubleMasterYes">Yes</label>
+                                                    </div>
+                                                    <div class="form-check ms-3">
+                                                        <input class="form-check-input" type="radio" name="doubleMasterRadio" id="doubleMasterNo" checked>
+                                                        <label class="form-check-label" for="doubleMasterNo">No</label>
+                                                    </div>
+
+                                                    <div id="doubleMasterInputs" class="d-flex align-items-center ml-20" >
+                                                        <input type="text" placeholder="Name Of Qualification" required>
+                                                        <input type="text" placeholder="Year of Completion" required class="ml-10">
+                                                        <input type="text" placeholder="University / College" required class="ml-10">
+                                                        <input type="text" placeholder="Grade / Division" required class="ml-10">
+                                                    </div>
+                                                </div>
+                                                                                    
+                                        </div>
+                                           <!-- Master end-->
+
+                                             <!-- PGD -->
+                                             <div class="col-md-12" id="pgdInputs" style="display: none;">    
+                                            <label class="form-check-label pb-5 pt-10">PGD</label>    
+                                            <div class="d-flex align-items-center">
+                                                <input type="text" placeholder="Name Of Qualification" required>
+                                                <input type="text" placeholder="Year of Completion" required class="ml-10">
+                                                <input type="text" placeholder="University / College" required class="ml-10">
+                                                <input type="text" placeholder="Grade / Division" required class="ml-10">
+                                            </div>  
+                                           
+                                        </div>
+                                           <!-- PGD end-->
+
+                                           
+                                        <!-- Bachelor -->
+                                        <div class="col-md-12" id="bachelorInputs" style="display: none;">   
+                                            <label class="form-check-label pb-5 pt-10">Bachelor</label>    
+                                            <div class="d-flex align-items-center">
+                                                <input type="text" placeholder="Name Of Qualification" required>
+                                                <input type="text" placeholder="Year of Completion" required class="ml-10">
+                                                <input type="text" placeholder="University / College" required class="ml-10">
+                                                <input type="text" placeholder="Grade / Division" required class="ml-10">
+                                            </div>  
+                                            <label class="form-check-label pb-5 pt-10">Double Bachelor</label>  
+                                        
+                                            <div class="col-md-12 d-flex justify-content-start align-items-center">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="doubleBachelorRadio" id="doubleBachelorYes">
+                                                    <label class="form-check-label" for="doubleBachelorYes">Yes</label>
+                                                </div>
+                                                <div class="form-check ms-3">
+                                                    <input class="form-check-input" type="radio" name="doubleBachelorRadio" id="doubleBachelorNo" checked>
+                                                    <label class="form-check-label" for="doubleBachelorNo">No</label>
+                                                </div>
+                                        
+                                                <div id="doubleBachelorInputs" class="d-flex align-items-center ml-20 " >
+                                                    <input type="text" placeholder="Name Of Qualification" required>
+                                                    <input type="text" placeholder="Year of Completion" required class="ml-10">
+                                                    <input type="text" placeholder="University / College" required class="ml-10">
+                                                    <input type="text" placeholder="Grade / Division" required class="ml-10">
+                                                </div>
+                                            </div>
+                                        </div>
+                                           <!-- Bachelor end-->
+
+                                              <!-- Diploma -->
+                                        <div class="col-md-12" id="diplomaInputs" style="display: none;">   
+                                            <label class="form-check-label pb-5 pt-10">Diploma</label>    
+                                            <div class="d-flex align-items-center">
+                                                <input type="text" placeholder="Name Of Qualification" required>
+                                                <input type="text" placeholder="Year of Completion" required class="ml-10">
+                                                <input type="text" placeholder="University / College" required class="ml-10">
+                                                <input type="text" placeholder="Grade / Division" required class="ml-10">
+                                            </div>  
+                                            <label class="form-check-label pb-5 pt-10">Double Diploma</label>  
+
+                                            <div class="col-md-12 d-flex justify-content-start align-items-center">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="doubleDiplomaRadio" >
+                                                    <label class="form-check-label" for="doubleDiplomaYes">Yes</label>
+                                                </div>
+                                                <div class="form-check ms-3">
+                                                    <input class="form-check-input" type="radio" name="doubleDiplomaRadio" checked>
+                                                    <label class="form-check-label" for="doubleDiplomaNo">No</label>
+                                                </div>
+                                            
+                                                <div id="doubleDiplomaInputs" class="d-flex align-items-center ml-20" style="display: none;">
+                                                    <input type="text" placeholder="Name Of Qualification" required>
+                                                    <input type="text" placeholder="Year of Completion" required class="ml-10">
+                                                    <input type="text" placeholder="University / College" required class="ml-10">
+                                                    <input type="text" placeholder="Grade / Division" required class="ml-10">
+                                                </div>
+                                            </div>
+                                         
+                                        </div>
+                                           <!-- Diploma end-->
+
+                                                    <!-- HSC / A-Level -->
+                                        <div class="col-md-12" id="alevelInputs" style="display: none;">   
+                                            <label class="form-check-label pb-5 pt-10">HSC / A-Level</label>    
+                                            <div class="d-flex align-items-center">
+                                                <input type="text" placeholder="Name Of Qualification" required>
+                                                <input type="text" placeholder="Year of Completion" required class="ml-10">
+                                                <input type="text" placeholder="University / College" required class="ml-10">
+                                                <input type="text" placeholder="Grade / Division" required class="ml-10">
+                                            </div>  
+                                           
+                                        </div>
+                                           <!-- HSC / A-Level end-->
+
+                                                 <!-- other -->
+                                        <div class="col-md-12" id="otherInputs" style="display: none;">   
+                                            <label class="form-check-label pb-5 pt-10">HSC / A-Level</label>    
+                                            <div class="d-flex align-items-center">
+                                                <input type="text" placeholder="Name Of Qualification" required>
+                                                <input type="text" placeholder="Year of Completion" required class="ml-10">
+                                                <input type="text" placeholder="University / College" required class="ml-10">
+                                                <input type="text" placeholder="Grade / Division" required class="ml-10">
+                                            </div>  
+                                           
+                                        </div>
+                                           <!-- other end-->
+                                           <div class="title-header pt-40">
+                                            <h3 class="title">Work Experience</h3>
+                                                <h5 class="title">
+                                                    Please write full experience to calculate exact points:</h5>
+                                                    <p>
+                                                        Add from recent work experience:
+                                                    </p>
+                                             </div>
+                                             <div class="col-md-12 d-flex justify-content-between" >   
+                                                <div>
+                                                    <label class="form-check-label pb-5 pt-10">From</label>    
+                                                    <input type="date" required/>
+                                                </div>
+                                                <div>
+                                                    <label class="form-check-label pb-5 pt-10">Till</label>    
+                                                    <input type="date" required/>
+                                                </div>
+                                                <div>
+                                                    <label class="form-check-label pb-5 pt-10">As an appointment letter</label>    
+                                                    <input type="text" placeholder="As an appointment letter" required/>
+                                                </div>
+                                                <div>
+                                                    <label class="form-check-label pb-5 pt-10">Employer</label>    
+                                                    <input type="text" placeholder="Name of Employer" required/>
+                                                </div>
+                                              
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label class="form-check-label pb-5 pt-10">Add more experience</label>
+                                                <div class="d-flex">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="doubleDiplomaRadio" onchange="toggleExperience(true)" />
+                                                        <label class="form-check-label" for="doubleDiplomaYes">Yes</label>
+                                                    </div>
+                                                    <div class="form-check ms-3">
+                                                        <input class="form-check-input" type="radio" name="doubleDiplomaRadio" checked onchange="toggleExperience(false)">
+                                                        <label class="form-check-label" for="doubleDiplomaNo">No</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- if yes work experience add -->
+                                            <div id="workExperienceSection" style="display: none;">
+
+                                            <div class="col-md-12 d-flex justify-content-between" >   
+                                                <div>
+                                                    <label class="form-check-label pb-5 pt-10">From</label>    
+                                                    <input type="date" required/>
+                                                </div>
+                                                <div>
+                                                    <label class="form-check-label pb-5 pt-10">Till</label>    
+                                                    <input type="date" required/>
+                                                </div>
+                                                <div>
+                                                    <label class="form-check-label pb-5 pt-10">As an appointment letter</label>    
+                                                    <input type="text" placeholder="As an appointment letter" required/>
+                                                </div>
+                                                <div>
+                                                    <label class="form-check-label pb-5 pt-10">Employer</label>    
+                                                    <input type="text" placeholder="Name of Employer" required/>
+                                                </div>
+                                              
+                                            </div>
+                                            <div class="col-md-12 d-flex justify-content-between" >   
+                                                <div>
+                                                    <label class="form-check-label pb-5 pt-10">From</label>    
+                                                    <input type="date" required/>
+                                                </div>
+                                                <div>
+                                                    <label class="form-check-label pb-5 pt-10">Till</label>    
+                                                    <input type="date" required/>
+                                                </div>
+                                                <div>
+                                                    <label class="form-check-label pb-5 pt-10">As an appointment letter</label>    
+                                                    <input type="text" placeholder="As an appointment letter" required/>
+                                                </div>
+                                                <div>
+                                                    <label class="form-check-label pb-5 pt-10">Employer</label>    
+                                                    <input type="text" placeholder="Name of Employer" required/>
+                                                </div>
+                                              
+                                            </div>
+                                            <div class="col-md-12 d-flex justify-content-between" >   
+                                                <div>
+                                                    <label class="form-check-label pb-5 pt-10">From</label>    
+                                                    <input type="date" required/>
+                                                </div>
+                                                <div>
+                                                    <label class="form-check-label pb-5 pt-10">Till</label>    
+                                                    <input type="date" required/>
+                                                </div>
+                                                <div>
+                                                    <label class="form-check-label pb-5 pt-10">As an appointment letter</label>    
+                                                    <input type="text" placeholder="As an appointment letter" required/>
+                                                </div>
+                                                <div>
+                                                    <label class="form-check-label pb-5 pt-10">Employer</label>    
+                                                    <input type="text" placeholder="Name of Employer" required/>
+                                                </div>
+                                              
+                                            </div>
+                                        </div>
+
+
+                                        <div class="title-header pt-40">
+                                            <h3 class="title">English Languages Ability</h3>
+                                        
+                                        </div>
+
+                                        <div class="col-md-12">   
+                                      
+                                            <div class="d-flex align-items-center">
+                                                <div >
+                                                    <input class="form-check-input" type="checkbox" id="ieltsCheckbox" onchange="toggleFields('ieltsFields', this.checked)">
+                                                       <label class="form-check-label">IELTS</label>
+                                                </div>
+                                                <div class="ml-20">
+                                                    <input class="form-check-input" type="checkbox" id="toeflId" onchange="toggleFields('toeflFields', this.checked)">
+                                                    <label class="form-check-label">TOEFL</label>
+                                                </div>
+                                                <div class="ml-20">
+                                                    <input class="form-check-input" type="checkbox" id="pteId" onchange="toggleFields('pteFields', this.checked)">
+                                                    <label class="form-check-label">PTE</label>
+                                                </div>
+                                                <div class="ml-20">
+                                                    <input class="form-check-input" type="checkbox" id="oetId" onchange="toggleFields('oetFields', this.checked)">
+                                                    <label class="form-check-label">OET</label>
+                                                </div>
+                                                <div class="ml-20">
+                                                    <input class="form-check-input" type="checkbox" id="caeId" onchange="toggleFields('caeFields', this.checked)">
+                                                    <label class="form-check-label">CAE</label>
+                                                </div>
+                                                <div class="ml-20">
+                                                    <input class="form-check-input" type="checkbox" id="celpipId" onchange="toggleFields('celpipFields', this.checked)">
+                                                    <label class="form-check-label">CELPIP</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                          <!-- IELTS -->
+                                        <div id="ieltsFields" class="col-md-12 mt-20" style="display: none;">
+                                            <label class="form-check-label mb-10">IELTS</label>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <input type="text" placeholder="Listening" required>
+                                                <input type="text" placeholder="Reading" required class="ml-20">
+                                                <input type="text" placeholder="Writing" required class="ml-20">
+                                                <input type="text" placeholder="Speaking" required class="ml-20">
+                                                <input type="date" required class="ml-20">
+                                            </div>  
+
+                                        </div>
+                                     
+                                        <div>
+                                                <!-- TOEFL -->
+                                                <div id="toeflFields" class="col-md-12 mt-20" style="display: none;">
+                                                    <label class="form-check-label mb-10">TOEFL</label>
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <input type="text" placeholder="Listening" required>
+                                                        <input type="text" placeholder="Reading" required class="ml-20">
+                                                        <input type="text" placeholder="Writing" required class="ml-20">
+                                                        <input type="text" placeholder="Speaking" required class="ml-20">
+                                                        <input type="date" required class="ml-20">
+                                                    </div>  
+        
+                                                </div>
+                                                    <!-- PTE -->
+                                                    <div id="pteFields" class="col-md-12 mt-20" style="display: none;">
+                                                        <label class="form-check-label mb-10">PTE</label>
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <input type="text" placeholder="Listening" required>
+                                                            <input type="text" placeholder="Reading" required class="ml-20">
+                                                            <input type="text" placeholder="Writing" required class="ml-20">
+                                                            <input type="text" placeholder="Speaking" required class="ml-20">
+                                                            <input type="date" required class="ml-20">
+                                                        </div>  
+            
+                                                    </div>
+                                                        <!-- OET -->
+                                                        <div id="oetFields" class="col-md-12 mt-20" style="display: none;">  
+                                                            <label class="form-check-label mb-10">OET</label>
+                                                            <div class="d-flex align-items-center justify-content-between">
+                                                                <input type="text" placeholder="Listening" required>
+                                                                <input type="text" placeholder="Reading" required class="ml-20">
+                                                                <input type="text" placeholder="Writing" required class="ml-20">
+                                                                <input type="text" placeholder="Speaking" required class="ml-20">
+                                                                <input type="date" required class="ml-20">
+                                                            </div>  
+                
+                                                        </div>
+                                                            <!-- CAE -->
+                                                            <div id="caeFields" class="col-md-12 mt-20" style="display: none;">    
+                                                                <label class="form-check-label mb-10">CAE</label>
+                                                                <div class="d-flex align-items-center justify-content-between">
+                                                                    <input type="text" placeholder="Listening" required>
+                                                                    <input type="text" placeholder="Reading" required class="ml-20">
+                                                                    <input type="text" placeholder="Writing" required class="ml-20">
+                                                                    <input type="text" placeholder="Speaking" required class="ml-20">
+                                                                    <input type="date" required class="ml-20">
+                                                                </div>  
+                    
+                                                            </div>
+                                                                <!-- CELPIP -->
+                                                                <div id="celpipFields" class="col-md-12 mt-20" style="display: none;">  
+                                                                    <label class="form-check-label mb-10">CELPIP</label>
+                                                                    <div class="d-flex align-items-center justify-content-between">
+                                                                        <input type="text" placeholder="Listening" required>
+                                                                        <input type="text" placeholder="Reading" required class="ml-20">
+                                                                        <input type="text" placeholder="Writing" required class="ml-20">
+                                                                        <input type="text" placeholder="Speaking" required class="ml-20">
+                                                                        <input type="date" required class="ml-20">
+                                                                    </div>  
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="title-header pt-40">
+                                                                <h3 class="title">Social</h3>
+                                                            </div>
+
+                                                            <div class="col-md-12">   
+                                                                <label class="form-check-label mb-10">How did you know about us?</label>
+                                                                <div class="d-flex align-items-center">
+                                                                    <div >
+                                                                        <input class="form-check-input" type="checkbox" >
+                                                                           <label class="form-check-label">Social Media
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="ml-20">
+                                                                        <input class="form-check-input" type="checkbox" >
+                                                                        <label class="form-check-label">E-Marketing
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="ml-20">
+                                                                        <input class="form-check-input" type="checkbox" >
+                                                                        <label class="form-check-label">Website
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="ml-20">
+                                                                        <input class="form-check-input" type="checkbox" >
+                                                                        <label class="form-check-label">SMS Marketing
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="ml-20">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">Newspaper Ad
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="ml-20">
+                                                                        <input class="form-check-input" type="checkbox" >
+                                                                        <label class="form-check-label">Friend</label>
+                                                                    </div>
+                                                                    <div class="ml-20">
+                                                                        <input class="form-check-input" type="checkbox" >
+                                                                        <label class="form-check-label">Printed Material
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="ml-20">
+                                                                        <input class="form-check-input" type="checkbox" >
+                                                                        <label class="form-check-label"> Other
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        
+                                                            <div class="mt-20">
+                                                                <button class="submit prt-btn prt-btn-size-md prt-btn-shape-round prt-btn-style-fill prt-btn-color-skincolor" type="submit" value="submit">Submit Here</button> 
+                                                            </div>
+                        
+                                                           
+                                                              
+
+                                                                  
+                    
+                                      
                                     </div>
                                 </form>
                             </div>
@@ -411,6 +928,8 @@
         <!-- back-to-top end -->
 
     </div><!-- page end -->
+
+    
 
     <!-- Javascript -->
     <script src="js/jquery-3.6.0.min.js"></script>

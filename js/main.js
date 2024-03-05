@@ -659,3 +659,57 @@ $(function(){
 
 
  });
+
+
+
+//  appointment form 
+
+ document.getElementById('flexCheckDefault').addEventListener('change', function() {
+var immigrationSelect = document.getElementById('immigrationSelect');
+if (this.checked) {
+ immigrationSelect.style.display = 'block';
+} else {
+ immigrationSelect.style.display = 'none';
+}
+});
+
+
+
+
+function toggleInputs(checkboxId, inputsId) {
+ var checkbox = document.getElementById(checkboxId);
+ var inputs = document.getElementById(inputsId);
+
+ checkbox.addEventListener('change', function() {
+     if(this.checked) {
+         inputs.style.display = "block";
+     } else {
+         inputs.style.display = "none";
+     }
+ });
+}
+
+toggleInputs('masterCheckbox', 'masterInputs');
+toggleInputs('pgdCheckbox', 'pgdInputs');
+toggleInputs('bachelorCheckbox', 'bachelorInputs');
+toggleInputs('diplomaCheckbox', 'diplomaInputs');
+toggleInputs('alevelCheckbox', 'alevelInputs');
+toggleInputs('otherCheckbox', 'otherInputs');
+
+function toggleExperience(show) {
+ const section = document.getElementById('workExperienceSection');
+ if (show) {
+     section.style.display = 'block';
+ } else {
+     section.style.display = 'none';
+ }
+}
+
+function toggleFields(fieldsId, isChecked) {
+ const fields = document.getElementById(fieldsId);
+ if (isChecked) {
+     fields.style.display = 'block';
+ } else {
+     fields.style.display = 'none';
+ }
+}
