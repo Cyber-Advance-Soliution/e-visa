@@ -24,38 +24,6 @@ jQuery(function($) {
 
 
 
-   
-function toggleInputs(checkboxId, inputsId) {
-    var checkbox = document.getElementById(checkboxId);
-    var inputs = document.getElementById(inputsId);
-   
-    checkbox.addEventListener('change', function() {
-        if(this.checked) {
-            inputs.style.display = "block";
-        } else {
-            inputs.style.display = "none";
-        }
-    });
-   }
-
-
-   toggleInputs('americaCheckbox', 'americasInput');
-   toggleInputs('oceaniaCheckbox', 'oceaniaInput');
-   toggleInputs('europeCheckbox', 'europeInput');
-   toggleInputs('asiaCheckbox', 'asiaInput');
-   toggleInputs('phdCheckbox', 'phdInputs');
-   toggleInputs('masterCheckbox', 'masterInputs');
-   toggleInputs('pgdCheckbox', 'pgdInputs');
-   toggleInputs('bachelorCheckbox', 'bachelorInputs');
-   toggleInputs('diplomaCheckbox', 'diplomaInputs');
-   toggleInputs('alevelCheckbox', 'alevelInputs');
-   toggleInputs('otherCheckbox', 'otherInputs');
-   toggleInputs('soicalCheckbox', 'soicalId');
-   toggleInputs('newsCheckbox', 'newsId');
-   toggleInputs('referralCheckbox', 'referralId');
-   toggleInputs('noteCheckbox', 'otherId');
-   toggleInputs('yesRefusal', 'refusalinputs');
-   toggleInputs('yesDunki', 'dunkInputs');
 /*------------------------------------------------------------------------------*/
 /* Preloader
 /*------------------------------------------------------------------------------*/
@@ -644,6 +612,9 @@ $(function(){
     });
 
     });
+
+
+    
 
 /*------------------------------------------------------------------------------*/
 /* Back to top
