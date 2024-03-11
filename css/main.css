@@ -2704,3 +2704,39 @@ section.error-404 .prt-404-img { margin-bottom: 35px; }
 .prt-stepbox-wrapper .stepbox-info span{
     color: #7a8a9e !important;
 }
+
+.form-popuptext{
+    text-align: justify !important;
+}
+
+.btn-close:focus, textarea:focus{
+    box-shadow: none !important;
+}
+
+.btn-close{
+    background-color: #4AB85F;
+    width: 25px;
+    height: 25px;
+    opacity: 1;
+    border-radius: 50%;
+    margin-right: -10px;
+    margin-top: -10px;
+
+}
+
+.btn-close:hover{
+    opacity: 1 !important;
+}
+
+.modal-content{
+    border-radius: 15px !important;
+}
+
+form.contact_form input, form.contact_form textarea, form.contact_form select{
+    height: 45px !important;
+}
+
+.form-check-input[type=checkbox], .form-check-input[type=radio]{
+    height: 18px !important;
+    width: 18px !important;
+}
