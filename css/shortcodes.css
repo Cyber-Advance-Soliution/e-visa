@@ -185,16 +185,21 @@
     5.Col-Bg-Image  
 ------------------------*/
 .prt-equal-height-image{ display: none; }
-.col-bg-img-one.prt-col-bgimage-yes > .prt-col-wrapper-bg-layer {
+/* .col-bg-img-one.prt-col-bgimage-yes > .prt-col-wrapper-bg-layer {
     background-image: url(../images/bg-image/col-bgimage-1.png);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
     margin-left: -302px;
+} */
+.prt-bg-layer img{
+    width: 100% !important;
+    height: 100%;
+    object-fit: cover;
 }
 .col-bg-img-two.prt-col-bgimage-yes > .prt-col-wrapper-bg-layer {
-    background-image: url(../images/bg-image/col-bgimage-2.png);
-    background-position: 50% 50%;
+    /* background-image: url(../images/bg-image/col-bgimage-2.png);
+    background-position: 50% 50%; */
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -224,7 +229,7 @@
     background-size: cover;
 }
 .col-bg-img-seven.prt-col-bgimage-yes > .prt-col-wrapper-bg-layer {
-    background-image: url(../images/bg-image/col-bgimage-7.png);
+    /* background-image: url(../images/bg-image/col-bgimage-7.png); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -369,7 +374,7 @@
     margin-right: -302px;
 }
 .col-bg-img-twenty-nine.prt-col-bgimage-yes > .prt-col-wrapper-bg-layer {   
-    background-image: url(../images/bg-image/col-bgimage-29.png);
+    /* background-image: url(../images/bg-image/col-bgimage-29.png); */
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -404,7 +409,7 @@
     margin-right: -302px;
 }
 .col-bg-img-thirty-four.prt-col-bgimage-yes > .prt-col-wrapper-bg-layer {   
-    background-image: url(../images/bg-image/col-bgimage-34.png);
+    /* background-image: url(../images/bg-image/col-bgimage-34.png); */
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -425,7 +430,7 @@
     margin-right: -302px;
 }
 .col-bg-img-thirty-seven.prt-col-bgimage-yes > .prt-col-wrapper-bg-layer {   
-    background-image: url(../images/bg-image/col-bgimage-37.png);
+    /* background-image: url(../images/bg-image/col-bgimage-37.png); */
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;

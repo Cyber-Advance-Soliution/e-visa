@@ -2061,19 +2061,37 @@ nav.main-menu ul.menu > li.mega-menu-item:hover > a {
     background-repeat: no-repeat;
 }
 .prt-titlebar-wrapper {
-    background-image: url(../images/pagetitle-bg.jpg);
+    /* background-image: url(../images/pagetitle-bg.jpg); */
 }
+
+
+  .image-overlay-container img {
+    display: block; 
+    width: 100%; 
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 13, 22, 0.45); 
+    z-index: 2; 
+  }
+  .prt-titlebar-wrapper-inner{
+    z-index: 9 !important ;
+  }
 .prt-titlebar-wrapper.about-img {
-    background-image: url(../images/pagetitle-bg-about.jpg);
+    /* background-image: url(../images/pagetitle-bg-about.jpg); */
 }
 .prt-titlebar-wrapper.service-img {
-    background-image: url(../images/pagetitle-bg-services.jpg);
+    /* background-image: url(../images/pagetitle-bg-services.jpg); */
 }
-.prt-titlebar-wrapper.team-img {
+/* .prt-titlebar-wrapper.team-img {
     background-image: url(../images/pagetitle-bg-team.jpg);
-}
+} */
 .prt-titlebar-wrapper.country-img {
-    background-image: url(../images/pagetitle-bg-country.jpg);
+    /* background-image: url(../images/pagetitle-bg-country.jpg); */
 }
 
 .prt-titlebar-wrapper.prt-bg > .prt-titlebar-wrapper-bg-layer.prt-bg-layer {
