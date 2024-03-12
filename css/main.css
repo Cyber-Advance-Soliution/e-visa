@@ -2628,6 +2628,7 @@ section.error-404 .prt-404-img { margin-bottom: 35px; }
     background-color: #fff;
     box-shadow: 0 6px 12px rgb(0 0 0 / 25%);
     z-index: 99999;
+    display: none;
 }
 .tmtheme_fbar_icons {
     display: block;
